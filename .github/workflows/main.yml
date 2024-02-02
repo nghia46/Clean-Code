@@ -27,14 +27,8 @@ jobs:
     - name: Run MSTest and publish results
       run: dotnet test --logger:trx --results-directory:TestResults
 
-    - name: Upload test results
+    - name: Publish Test Results
       uses: actions/upload-artifact@v2
       with:
         name: test-results
         path: TestResults
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./TestResults
