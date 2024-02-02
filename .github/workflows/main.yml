@@ -1,4 +1,4 @@
-name: Publish Test Results
+name: Publish Packages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  publish-results:
+  publish-packages:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,11 +24,13 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run MSTest and publish results
+    - name: Run MSTest
       run: dotnet test --logger:trx --results-directory:TestResults
 
-    - name: Publish Test Results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: TestResults
+    - name: Package
+      run: dotnet pack --configuration Release --output nupkg
+
+    - name: Publish to GitHub Packages
+      run: dotnet nuget push nupkg/*.nupkg --source "github" --skip-duplicate
+      env:
+        NUGET_TOKEN: ${{secrets.GITHUB_TOKEN}}
