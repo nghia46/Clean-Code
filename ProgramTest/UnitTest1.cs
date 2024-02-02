@@ -35,5 +35,10 @@ namespace ProgramTest
             var result = shape.CalculateArea();
             Assert.AreEqual(5.29f, result, 0.01f);
         }
+        [TestMethod]
+        public void TestSquareFail()
+        {
+            Assert.AreEqual(1, 2);
+        }
     }
 }
