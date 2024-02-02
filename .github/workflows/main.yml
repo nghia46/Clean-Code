@@ -1,4 +1,4 @@
-name: Run MSTest
+name: Build Test
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: windows-latest
+  Build-And-Test:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '8.0'  # Change this to your desired .NET Core version
+        dotnet-version: '8.0'
 
     - name: Restore dependencies
       run: dotnet restore
@@ -24,11 +24,5 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run MSTest and publish results
+    - name: Run MSTest
       run: dotnet test --logger:trx --results-directory:TestResults
-
-    - name: Upload test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: TestResults
