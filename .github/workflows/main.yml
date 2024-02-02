@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -24,21 +24,13 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run MSTest
-      run: dotnet test --configuration Release --logger trx --results-directory TestResults
-      env:
-        NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+    - name: Run MSTest and publish results
+      uses: actionsoft/mstest@v2
+      with:
+        testResultsDirectory: TestResults
 
-    - name: Archive test results
+    - name: Upload test results
       uses: actions/upload-artifact@v2
       with:
         name: test-results
         path: TestResults
-
-    - name: Download and visualize test results
-      uses: actions/download-artifact@v2
-      with:
-        name: test-results
-
-    - name: Display test results
-      run: cat TestResults/*.trx | dotnet test-logger
