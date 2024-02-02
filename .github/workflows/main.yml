@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '8.0'  # Change this to your desired .NET Core version
+        dotnet-version: '3.1'  # Change this to your desired .NET Core version
 
     - name: Restore dependencies
       run: dotnet restore
@@ -24,12 +24,13 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run MSTest and publish results
+    - name: Run MSTest
       run: dotnet test --configuration Release --logger trx --results-directory TestResults
       env:
         NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
-    - name: Publish test results
-      uses: PeterKottas/DotNetTestTask@2
+
+    - name: Archive test results
+      uses: actions/upload-artifact@v2
       with:
-        command: publish
-        publishXmlConfiguration: ./TestResults/*.trx
+        name: test-results
+        path: TestResults
