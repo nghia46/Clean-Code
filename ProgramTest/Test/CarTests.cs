@@ -1,5 +1,8 @@
 using Moq;
-namespace ProgramTest;
+using PatternLastBeforeHolidays.DependencyInjection;
+
+namespace ProgramTest.Test;
+
 [TestClass]
 public class CarTests
 {
@@ -7,8 +10,8 @@ public class CarTests
     public void Start_ShouldInvokeEngineStart()
     {
         // Arrange
-        Mock<IEngine> mockEngine = new Mock<IEngine>();
-        Car car = new Car(mockEngine.Object);
+        var mockEngine = new Mock<IEngine>();
+        var car = new Car(mockEngine.Object);
 
         // Act
         car.Start();
@@ -21,8 +24,8 @@ public class CarTests
     public void Stop_ShouldInvokeEngineStop()
     {
         // Arrange
-        Mock<IEngine> mockEngine = new Mock<IEngine>();
-        Car car = new Car(mockEngine.Object);
+        var mockEngine = new Mock<IEngine>();
+        var car = new Car(mockEngine.Object);
 
         // Act
         car.Stop();

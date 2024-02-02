@@ -1,12 +1,14 @@
-using Open_Close;
-namespace PatternLastBeforeHolidays.Open_Close;
+using PatternLastBeforeHolidays.Open_Close;
+
+namespace PatternLastBeforeHolidays.Client;
+
 public class OpenCloseClient
 {
     public void Main()
     {
         Rectangle rectangle = new()
         {
-            Lenght = 2,
+            Length = 2,
             Width = 34
         };
         var result = rectangle.CalculateArea();

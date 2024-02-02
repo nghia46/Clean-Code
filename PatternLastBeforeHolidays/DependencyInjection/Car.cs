@@ -1,3 +1,5 @@
+namespace PatternLastBeforeHolidays.DependencyInjection;
+
 public class Car
 {
     private readonly IEngine _engine;

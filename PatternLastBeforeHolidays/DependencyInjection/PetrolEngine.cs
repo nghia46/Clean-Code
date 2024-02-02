@@ -1,3 +1,5 @@
+namespace PatternLastBeforeHolidays.DependencyInjection;
+
 public class PetrolEngine : IEngine
 {
     public void Start()

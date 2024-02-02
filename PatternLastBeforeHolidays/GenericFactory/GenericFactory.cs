@@ -2,7 +2,7 @@
 
 namespace PatternLastBeforeHolidays.GenericFactory;
 
-public class GenericFactory<T> where T : IShape,new()
+public class GenericFactory<T> where T : IShape, new()
 {
     public T CreateShape()
     {

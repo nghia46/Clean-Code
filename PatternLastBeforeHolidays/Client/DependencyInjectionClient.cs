@@ -1,6 +1,8 @@
-using System.Security.Authentication.ExtendedProtection;
+using PatternLastBeforeHolidays.DependencyInjection;
 
-public class DepndencyInjectionClient
+namespace PatternLastBeforeHolidays.Client;
+
+public class DependencyInjectionClient
 {
     public void Main()
     {
