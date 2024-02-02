@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: windows-latest
 
     steps:
@@ -21,14 +21,5 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Build
-      run: dotnet build --configuration Release
-
-    - name: Run MSTest and publish results
-      run: dotnet test --logger:trx --results-directory:TestResults
-
-    - name: Upload test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: TestResults
+    - name: Run MSTest
+      run: dotnet test --logger:trx
