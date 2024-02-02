@@ -5,7 +5,7 @@ using PatternLastBeforeHolidays.Open_Close;
 namespace ProgramTest
 {
     [TestClass]
-    public class UnitTest1
+    public class ShapeTest
     {
         [TestMethod]
         public void TestCirCle()
