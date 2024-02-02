@@ -25,9 +25,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Run MSTest and publish results
-      uses: actionsoft/mstest@v2
-      with:
-        testResultsDirectory: TestResults
+      run: dotnet test --logger:trx --results-directory:TestResults
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
