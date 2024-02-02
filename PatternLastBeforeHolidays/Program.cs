@@ -14,6 +14,7 @@ namespace PatternLastBeforeHolidays
             //new FactoryClient().Main();
             //new SingletonClient().Main();
             //new OpenCloseClient().Main();
+            new DepndencyInjectionClient().Main();
         }
     }
 } 
