@@ -1,4 +1,4 @@
-name: Run MSTest
+name: Publish Test Results
 
 on:
   push:
@@ -6,15 +6,35 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: windows-latest
+  publish-results:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0'  # Change this to your desired .NET Core version
+
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Run MSTest
-      run: dotnet test --logger:trx
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Run MSTest and publish results
+      run: dotnet test --logger:trx --results-directory:TestResults
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: TestResults
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./TestResults
