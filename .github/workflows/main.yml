@@ -24,5 +24,12 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run MSTest
+    - name: Run MSTest and publish results
       run: dotnet test --configuration Release --logger trx --results-directory TestResults
+      env:
+        NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+    - name: Publish test results
+      uses: PeterKottas/DotNetTestTask@2
+      with:
+        command: publish
+        publishXmlConfiguration: ./TestResults/*.trx
