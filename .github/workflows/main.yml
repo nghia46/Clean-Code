@@ -34,3 +34,11 @@ jobs:
       with:
         name: test-results
         path: TestResults
+
+    - name: Download and visualize test results
+      uses: actions/download-artifact@v2
+      with:
+        name: test-results
+
+    - name: Display test results
+      run: cat TestResults/*.trx | dotnet test-logger
