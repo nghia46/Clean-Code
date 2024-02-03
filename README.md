@@ -4,7 +4,7 @@
 So far in this repos has:
 #### SOILD
 - Open-close principle
-- Liskov substitution
+- Liskov substitution - obsolete
 #### Design Pattern
 - Dependency Injection
 - Factory
@@ -12,3 +12,4 @@ So far in this repos has:
 - Generic singleton
 - Object Pool
 - Commander
+- Prototype
