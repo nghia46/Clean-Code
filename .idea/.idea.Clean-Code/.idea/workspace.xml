@@ -8,27 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3e9fa54-d1e8-4e1b-883b-ea6e2c491140" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection/IEngine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection/OilEngine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/ShapeTestData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clean-Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clean-Code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Client/DepndencyInjectionClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Client/DependencyInjectionClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Client/OpenCloseClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Client/OpenCloseClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection(DI)/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection(DI)/IEngine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection(DI)/OilEngine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection(DI)/PetrolEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/DependencyInjection/PetrolEngine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Factory/ShapeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Factory/ShapeFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/GenericFactory/GenericFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/GenericFactory/GenericFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/GenericSingleton/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/GenericSingleton/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/AreaCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/AreaCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Circle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Circle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Rectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Rectangle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Square.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Square.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/PatternLastBeforeHolidays.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/PatternLastBeforeHolidays.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProgramTest/ProgramTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramTest/ProgramTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramTest/Test/CarTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramTest/Test/CarTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,31 +31,36 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2bnbA1r5BqQvLcrKfXaoRObb7sS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;8b6a4d20-e3bb-4a6d-9817-6823104b1f2a.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "8b6a4d20-e3bb-4a6d-9817-6823104b1f2a.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "b6504450-664f-44c7-ad42-a0aaf1bac601.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Administrator\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Administrator\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.PatternLastBeforeHolidays">
     <configuration name="PatternLastBeforeHolidays" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -101,6 +91,7 @@
       <updated>1706853645980</updated>
       <workItem from="1706853647390" duration="1886000" />
       <workItem from="1706865208594" duration="352000" />
+      <workItem from="1706924842817" duration="419000" />
     </task>
     <servers />
   </component>

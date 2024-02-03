@@ -21,4 +21,8 @@
         <ProjectReference Include="..\PatternLastBeforeHolidays\PatternLastBeforeHolidays.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="TestData\" />
+    </ItemGroup>
+
 </Project>
