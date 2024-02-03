@@ -11,3 +11,4 @@ So far in this repos has:
 - Generic factory
 - Generic singleton
 - Object Pool
+- Commander

@@ -12,6 +12,7 @@ internal abstract class Program
         //new OpenCloseClient().Main();
         //new DependencyInjectionClient().Main();
         //new ObjectPoolClient().Main();
+        new CommanderClient().Main();
     }
 
 }
