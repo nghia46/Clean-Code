@@ -10,3 +10,4 @@ So far in this repos has:
 - Factory
 - Generic factory
 - Generic singleton
+- Object Pool
