@@ -8,12 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3e9fa54-d1e8-4e1b-883b-ea6e2c491140" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/ShapeTestData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clean-Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clean-Code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Rectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Rectangle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Square.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Open-Close/Square.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramTest/ProgramTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramTest/ProgramTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatternLastBeforeHolidays/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatternLastBeforeHolidays/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramTest/Test/ShapeTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/coreclr/System.Private.CoreLib/src/System/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Collections/src/System/Collections/Generic/Stack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/Activator.RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/bf5e279d9239bfef5bb1b8d6212f1b971c434606/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/DefaultInterpolatedStringHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -40,10 +40,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Project.PatternLastBeforeHolidays.executor": "Debug",
     "8b6a4d20-e3bb-4a6d-9817-6823104b1f2a.executor": "Debug",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.327551",
     "b6504450-664f-44c7-ad42-a0aaf1bac601.executor": "Debug",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -61,7 +63,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.PatternLastBeforeHolidays">
+  <component name="RunManager">
     <configuration name="PatternLastBeforeHolidays" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -92,6 +94,7 @@
       <workItem from="1706853647390" duration="1886000" />
       <workItem from="1706865208594" duration="352000" />
       <workItem from="1706924842817" duration="419000" />
+      <workItem from="1706956065783" duration="280000" />
     </task>
     <servers />
   </component>
@@ -100,5 +103,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PatternLastBeforeHolidays/Client/ObjectPoolClient.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\Users\Administrator\Desktop\Clean-Code\PatternLastBeforeHolidays\Client\ObjectPoolClient.cs" initialLine="11" containingFunctionPresentation="Method 'Main'">
+            <startOffsets>
+              <option value="310" />
+            </startOffsets>
+            <endOffsets>
+              <option value="379" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

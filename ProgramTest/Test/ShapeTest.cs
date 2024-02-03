@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PatternLastBeforeHolidays.GenericFactory;
 using PatternLastBeforeHolidays.Open_Close;
 
