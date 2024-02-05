@@ -1,4 +1,5 @@
-﻿using PatternLastBeforeHolidays.Client;
+﻿using System.Net.Http.Headers;
+using PatternLastBeforeHolidays.Client;
 
 namespace PatternLastBeforeHolidays;
 
@@ -14,7 +15,8 @@ internal abstract class Program
         //new ObjectPoolClient().Main();
         //new CommanderClient().Main();
         //new PrototypeClient().Main();
-        new ObserverClient().Main();
+        //new ObserverClient().Main();
+        new StateClient().Main();
     }
 
 }
