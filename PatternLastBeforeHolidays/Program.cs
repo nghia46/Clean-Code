@@ -13,7 +13,8 @@ internal abstract class Program
         //new DependencyInjectionClient().Main();
         //new ObjectPoolClient().Main();
         //new CommanderClient().Main();
-        new PrototypeClient().Main();
+        //new PrototypeClient().Main();
+        new ObserverClient().Main();
     }
 
 }

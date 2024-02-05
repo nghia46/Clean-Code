@@ -13,3 +13,4 @@ So far in this repos has:
 - Object Pool
 - Commander
 - Prototype
+- Observer
