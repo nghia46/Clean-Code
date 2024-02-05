@@ -1,4 +1,6 @@
 
+using PatternLastBeforeHolidays.Observer;
+
 namespace ProgramTest.Test;
 
 [TestClass]
