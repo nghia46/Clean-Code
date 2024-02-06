@@ -25,7 +25,7 @@ public class FanRemoteTests
     {
         // Arrange
         var mockTurnOffCommand = new Mock<ICommand>();
-        var remote = new FanRemote(null, mockTurnOffCommand.Object);
+        var remote = new FanRemote(default, mockTurnOffCommand.Object);
 
         // Act
         remote.TurnOffButton();
