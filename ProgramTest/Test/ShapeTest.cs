@@ -49,7 +49,7 @@ namespace ProgramTest.Test
             {
                 return new[]
                 {
-                    new object[] { 5, 25 },
+                    new object[] { 5, 26 },
                     new object[] { 0.001f, 0.000001f },
                     new object[] { 10000, 100000000 },
                     new object[] { 0, 0 },
