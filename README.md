@@ -15,3 +15,5 @@ So far in this repos has:
 - Prototype
 - Observer
 - State
+
+[![untitled.png](https://i.postimg.cc/NjBtmnPX/untitled.png)](https://postimg.cc/gnS1Pgpc)
