@@ -1,4 +1,4 @@
-name: Build and Run Console App
+name: Build Test
 
 on:
   push:
@@ -6,15 +6,15 @@ on:
       - main
 
 jobs:
-  build:
+  Build-And-Test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '8.0'
 
@@ -24,12 +24,5 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-    - name: Run Console App
-      run: dotnet run
-      # Capture console output and print it
-      env:
-        OUTPUT: |
-          $(dotnet run)
-      shell: bash
-    - name: Print Console Output
-      run: echo "$OUTPUT"
+    - name: Run MSTest
+      run: dotnet test --logger:trx --results-directory:TestResults
