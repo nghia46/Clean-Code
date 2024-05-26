@@ -16,4 +16,4 @@ So far in this repos has:
 - Observer
 - State
 
-[![untitled.png](https://i.postimg.cc/NjBtmnPX/untitled.png)](https://postimg.cc/gnS1Pgpc)
+![image](https://github.com/nghia46/Clean-Code/assets/84240893/86690569-334a-4fc8-a07f-368719b85739)
