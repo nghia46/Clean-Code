@@ -1,5 +1,4 @@
-
-using PatternLastBeforeHolidays.Observer;
+using CleanCode.Observer;
 
 namespace ProgramTest.Test;
 

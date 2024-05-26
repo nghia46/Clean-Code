@@ -1,7 +1,5 @@
-using System.Reflection.Metadata;
 using Moq;
-using PatternLastBeforeHolidays.Commander;
-using PatternLastBeforeHolidays.DependencyInjection;
+using CleanCode.DependencyInjection;
 
 namespace ProgramTest.Test;
 
