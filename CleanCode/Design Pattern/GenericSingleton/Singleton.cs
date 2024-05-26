@@ -13,7 +13,7 @@ public class Singleton<T> where T : class, new()
             if (instance == null)
                 lock (lockObject)
                 {
-                    if (instance == null) instance = new T();
+                    instance ??= new T();
                 }
 
             return instance;
