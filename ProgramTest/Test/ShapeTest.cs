@@ -1,7 +1,5 @@
 using CleanCode.GenericFactory;
-using CleanCode.Open_Close;
-
-namespace ProgramTest.Test;
+using CleanCode.OpenClose;
 
 
 [TestClass]
