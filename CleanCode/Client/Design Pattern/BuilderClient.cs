@@ -8,7 +8,7 @@ public class BuilderClient {
         
         Director director = new Director(builder); 
 
-        director.Construct2Part();
+        director.Construct1Part();
 
         Product product = builder.GetResult();
 
