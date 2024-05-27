@@ -15,7 +15,9 @@ public abstract class Program
         //new ObserverClient().Main();
         //new StateClient().Main();
         //new LiskovSubstitutionClient().Main(); 
-        new DependencyInversionClient().Main();
+        //new DependencyInversionClient().Main();
+        //new AbstractFactoryClient().Main();
+        new BuilderClient().Main();
     }
 
 }
