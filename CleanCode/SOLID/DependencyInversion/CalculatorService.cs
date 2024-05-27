@@ -1,4 +1,4 @@
-namespace CleanCode.DependencyInversion;
+namespace CleanCode.SOLID.DependencyInversion;
 public class CalculatorService
 {
     private readonly ICalculator _calculator;

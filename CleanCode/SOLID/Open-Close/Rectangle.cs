@@ -1,4 +1,4 @@
-namespace CleanCode.OpenClose;
+namespace CleanCode.SOLID.Open_Close;
 
 public class Rectangle : IShape
 {

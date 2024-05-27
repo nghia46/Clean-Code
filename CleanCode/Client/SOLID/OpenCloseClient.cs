@@ -1,6 +1,6 @@
-using CleanCode.OpenClose;
+using CleanCode.SOLID.Open_Close;
 
-namespace CleanCode.Client;
+namespace CleanCode.Client.SOLID;
 
 public class OpenCloseClient
 {

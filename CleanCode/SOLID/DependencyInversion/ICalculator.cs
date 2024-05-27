@@ -1,4 +1,4 @@
-namespace CleanCode.DependencyInversion;
+namespace CleanCode.SOLID.DependencyInversion;
 public interface ICalculator
 {
     double Add(double a, double b);

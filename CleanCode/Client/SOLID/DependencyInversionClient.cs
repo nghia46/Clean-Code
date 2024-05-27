@@ -1,6 +1,6 @@
-using CleanCode.DependencyInversion;
+using CleanCode.SOLID.DependencyInversion;
 
-namespace CleanCode.Client;
+namespace CleanCode.Client.SOLID;
 public class DependencyInversionClient {
     public void Main()
     {

@@ -1,4 +1,4 @@
-using CleanCode.Observer;
+using CleanCode.DesignPattern.BehavioralPatterns.Observer;
 
 namespace ProgramTest.Test;
 

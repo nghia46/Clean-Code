@@ -1,6 +1,7 @@
-using CleanCode.GenericFactory;
-using CleanCode.OpenClose;
+using CleanCode.DesignPattern.CreationalPatterns.GenericFactory;
+using CleanCode.SOLID.Open_Close;
 
+namespace ProgramTest.Test;
 
 [TestClass]
 public class ShapeTest
@@ -47,12 +48,12 @@ public class ShapeTest
         {
             return new[]
             {
-                    new object[] { 5, 25 },
-                    new object[] { 0.001f, 0.000001f },
-                    new object[] { 10000, 100000000 },
-                    new object[] { 0, 0 },
-                    new object[] { float.MaxValue, float.PositiveInfinity }
-                };
+                new object[] { 5, 25 },
+                new object[] { 0.001f, 0.000001f },
+                new object[] { 10000, 100000000 },
+                new object[] { 0, 0 },
+                new object[] { float.MaxValue, float.PositiveInfinity }
+            };
         }
     }
 
@@ -62,12 +63,12 @@ public class ShapeTest
         {
             return new[]
             {
-                    new object[] { 1, MathF.PI },
-                    new object[] { 5, 25 * MathF.PI },
-                    new object[] { 0.5f, 0.25f * MathF.PI },
-                    new object[] { 0, 0 },
-                    new object[] { float.MaxValue, float.PositiveInfinity }
-                };
+                new object[] { 1, MathF.PI },
+                new object[] { 5, 25 * MathF.PI },
+                new object[] { 0.5f, 0.25f * MathF.PI },
+                new object[] { 0, 0 },
+                new object[] { float.MaxValue, float.PositiveInfinity }
+            };
         }
     }
 
@@ -77,12 +78,12 @@ public class ShapeTest
         {
             return new[]
             {
-                    new object[] { 2, 3, 6 },      // Length = 2, Width = 3, Area = 2 * 3 = 6
-                    new object[] { 4, 4, 16 },     // Length = 4, Width = 4, Area = 4 * 4 = 16
-                    new object[] { 10, 5, 50 },    // Length = 10, Width = 5, Area = 10 * 5 = 50
-                    new object[] { 0, 10, 0 },     // Length = 0, Width = 10, Area = 0 * 10 = 0
-                    new object[] { float.MaxValue, float.MaxValue, float.PositiveInfinity }
-                };
+                new object[] { 2, 3, 6 },      // Length = 2, Width = 3, Area = 2 * 3 = 6
+                new object[] { 4, 4, 16 },     // Length = 4, Width = 4, Area = 4 * 4 = 16
+                new object[] { 10, 5, 50 },    // Length = 10, Width = 5, Area = 10 * 5 = 50
+                new object[] { 0, 10, 0 },     // Length = 0, Width = 10, Area = 0 * 10 = 0
+                new object[] { float.MaxValue, float.MaxValue, float.PositiveInfinity }
+            };
         }
     }
 }

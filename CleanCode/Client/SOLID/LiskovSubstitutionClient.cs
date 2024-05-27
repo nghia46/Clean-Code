@@ -1,6 +1,6 @@
-using CleanCode.LiskovSubstitution;
+using CleanCode.SOLID.LiskovSubstitution;
 
-namespace CleanCode.Client;
+namespace CleanCode.Client.SOLID;
 public class LiskovSubstitutionClient {
     public void Main()
     {

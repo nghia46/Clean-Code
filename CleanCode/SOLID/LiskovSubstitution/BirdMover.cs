@@ -1,4 +1,4 @@
-using CleanCode.LiskovSubstitution;
+namespace CleanCode.SOLID.LiskovSubstitution;
 
 public class BirdMover
 {

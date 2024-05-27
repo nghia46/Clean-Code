@@ -1,4 +1,4 @@
-using CleanCode.Commander;
+using CleanCode.DesignPattern.BehavioralPatterns.Commander;
 using Moq;
 
 namespace ProgramTest.Test

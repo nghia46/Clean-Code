@@ -1,4 +1,4 @@
-namespace CleanCode.LiskovSubstitution;
+namespace CleanCode.SOLID.LiskovSubstitution;
 public class Sparrow : IBird
 {
     public void Move()

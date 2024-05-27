@@ -1,4 +1,4 @@
-namespace CleanCode.DependencyInjection;
+namespace CleanCode.Techniques.DependencyInjection;
 
 public class Car
 {

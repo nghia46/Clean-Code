@@ -1,5 +1,5 @@
+using CleanCode.Techniques.DependencyInjection;
 using Moq;
-using CleanCode.DependencyInjection;
 
 namespace ProgramTest.Test;
 
