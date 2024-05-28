@@ -1,4 +1,4 @@
-﻿using CleanCode.Client.DesignPattern.CreationalPatterns;
+﻿using CleanCode.Client.DesignPattern.Structural_patterns;
 
 namespace CleanCode;
 
@@ -19,7 +19,11 @@ public abstract class Program
         //new LiskovSubstitutionClient().Main(); 
         //new DependencyInversionClient().Main();
         //new AbstractFactoryClient().Main();
-        new BuilderClient().Main();
+        //new BuilderClient().Main();
+        //new DecoratorClient().Main(); 
+        //new AdapterClient().Main(); 
+        //new FacadeClient().Main();
+        new ProxyClient().Main();
     }
 
 }
