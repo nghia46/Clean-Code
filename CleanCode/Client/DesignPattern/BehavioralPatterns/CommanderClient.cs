@@ -1,7 +1,5 @@
 using CleanCode.DesignPattern.BehavioralPatterns.Commander;
-
 namespace CleanCode.Client.DesignPattern.BehavioralPatterns;
-
 public class CommanderClient
 {
     public void Main()

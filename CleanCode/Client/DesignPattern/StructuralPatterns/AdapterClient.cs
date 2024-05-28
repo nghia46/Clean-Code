@@ -1,7 +1,6 @@
 using CleanCode.DesignPattern.StructuralPatterns.Adapter;
 
-namespace CleanCode.Client.DesignPattern.Structural_patterns;
-
+namespace CleanCode.Client.DesignPattern.StructuralPatterns;
 public class AdapterClient
 {
     public void Main()

@@ -1,6 +1,6 @@
 using CleanCode.DesignPattern.StructuralPatterns.Proxy;
 
-namespace CleanCode.Client.DesignPattern.Structural_patterns;
+namespace CleanCode.Client.DesignPattern.StructuralPatterns;
 
 public class ProxyClient
 {

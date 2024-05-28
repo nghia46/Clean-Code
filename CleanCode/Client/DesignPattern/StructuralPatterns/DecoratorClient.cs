@@ -1,6 +1,6 @@
 using CleanCode.DesignPattern.StructuralPatterns.Decorator.PizzaExample;
 
-namespace CleanCode.Client.DesignPattern.Structural_patterns;
+namespace CleanCode.Client.DesignPattern.StructuralPatterns;
 
 public class DecoratorClient {
     public void Main()
@@ -19,6 +19,7 @@ public class DecoratorClient {
         //     .AddOlives()
         //     .AddPepperoni()
         //     .AddCheese()
+        //     .AddOlives()
         //     .Build();
         // Console.WriteLine($"Description: {pizza.GetDescription()}, Cost: {pizza.GetCost()}$");
         # endregion

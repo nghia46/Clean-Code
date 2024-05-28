@@ -1,4 +1,4 @@
-﻿using CleanCode.Client.DesignPattern.Structural_patterns;
+﻿using CleanCode.Client.DesignPattern.StructuralPatterns;
 
 namespace CleanCode;
 
@@ -23,7 +23,9 @@ public abstract class Program
         //new DecoratorClient().Main(); 
         //new AdapterClient().Main(); 
         //new FacadeClient().Main();
-        new ProxyClient().Main();
+        //new ProxyClient().Main();
+        //new FlyweightClient().Main();
+        new BridgeClient().Main();
     }
 
 }
