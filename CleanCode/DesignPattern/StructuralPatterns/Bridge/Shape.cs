@@ -1,5 +1,6 @@
 // Abstraction cho hình tròn
-using CleanCode.DesignPattern.StructuralPatterns.Bridge;
+
+namespace CleanCode.DesignPattern.StructuralPatterns.Bridge;
 
 public abstract class Shape
 {

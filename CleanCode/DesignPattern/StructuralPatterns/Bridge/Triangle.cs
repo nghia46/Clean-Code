@@ -1,4 +1,4 @@
-using CleanCode.DesignPattern.StructuralPatterns.Bridge;
+namespace CleanCode.DesignPattern.StructuralPatterns.Bridge;
 
 public class Triangle : Shape
 {

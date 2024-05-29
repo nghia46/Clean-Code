@@ -1,4 +1,5 @@
-﻿using CleanCode.Client.DesignPattern.StructuralPatterns;
+﻿using CleanCode.Client.DesignPattern.BehavioralPatterns;
+using CleanCode.Client.DesignPattern.StructuralPatterns;
 
 namespace CleanCode;
 
@@ -25,7 +26,8 @@ public abstract class Program
         //new FacadeClient().Main();
         //new ProxyClient().Main();
         //new FlyweightClient().Main();
-        new BridgeClient().Main();
+        //new BridgeClient().Main();
+        new StrategyClient().Main();
     }
 
 }

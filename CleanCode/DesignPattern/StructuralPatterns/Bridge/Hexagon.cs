@@ -1,5 +1,7 @@
 // Abstraction cụ thể: hình sáu cạnh (Hexagon)
-using CleanCode.DesignPattern.StructuralPatterns.Bridge;
+
+namespace CleanCode.DesignPattern.StructuralPatterns.Bridge;
+
 public class Hexagon : Shape
 {
     private float sideLength;
