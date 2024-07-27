@@ -27,7 +27,8 @@ public abstract class Program
         //new ProxyClient().Main();
         //new FlyweightClient().Main();
         //new BridgeClient().Main();
-        new StrategyClient().Main();
+        //new StrategyClient().Main();
+        new MediatorClient().Main();
     }
 
 }
