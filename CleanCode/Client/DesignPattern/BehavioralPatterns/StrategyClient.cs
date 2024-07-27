@@ -7,11 +7,13 @@ public class StrategyClient
     public void Main()
     {
         #region Example 2
-        Sorter sorter = new Sorter();
+        
         int[] array = { 1, 5, 3, 2, 4 };
         Console.WriteLine("Original array:");
         Console.WriteLine(string.Join(", ", array));
 
+        // Khai báo Sorter để sắp xếp mảng
+        Sorter sorter = new Sorter();
         // Sắp xếp bằng Bubble Sort
         sorter.SetSortStrategy(new BubbleSortStrategy());
         sorter.Sort(array);
@@ -19,7 +21,7 @@ public class StrategyClient
         Console.WriteLine(string.Join(", ", array));
 
         // Reset array
-        array = new int[] { 5, 3, 8, 1, 2 };
+        array = [5, 3, 8, 1, 2];
 
         // Sắp xếp bằng Quick Sort
         sorter.SetSortStrategy(new QuickSortStrategy());
