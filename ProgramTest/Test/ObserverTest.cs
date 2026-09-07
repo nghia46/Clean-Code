@@ -9,7 +9,7 @@ public class ObserverTest
     public void NotifyObservers_EventTriggered_AllObserversNotified()
     {
         // Arrange
-        Subject subject = new Subject();
+        Subject subject = new();
         ConcreteObserver observer1 = new ConcreteObserver("Observer 1");
         ConcreteObserver observer2 = new ConcreteObserver("Observer 2");
 

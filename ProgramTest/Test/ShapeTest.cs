@@ -7,7 +7,7 @@ namespace ProgramTest.Test;
 public class ShapeTest
 {
     [TestMethod]
-    [DynamicData(nameof(SquareTestData), DynamicDataSourceType.Property)]
+    [DynamicData(nameof(SquareTestData))]
     public void TestSquareArea_GivenSideLength_ReturnsExpectedArea(float sideLength, float expectedArea)
     {
         var shapeFactory = new GenericFactory<Square>();
@@ -19,7 +19,7 @@ public class ShapeTest
     }
 
     [TestMethod]
-    [DynamicData(nameof(CircleTestData), DynamicDataSourceType.Property)]
+    [DynamicData(nameof(CircleTestData))]
     public void TestCircleArea_GivenRadius_ReturnsExpectedArea(float radius, float expectedArea)
     {
         var shapeFactory = new GenericFactory<Circle>();
@@ -31,7 +31,7 @@ public class ShapeTest
     }
 
     [TestMethod]
-    [DynamicData(nameof(RectangleTestData), DynamicDataSourceType.Property)]
+    [DynamicData(nameof(RectangleTestData))]
     public void TestRectangleArea_GivenWidthAndLength_ReturnsExpectedArea(float width, float length, float expectedArea)
     {
         var shapeFactory = new GenericFactory<Rectangle>();
@@ -46,14 +46,14 @@ public class ShapeTest
     {
         get
         {
-            return new[]
-            {
-                new object[] { 5, 25 },
-                new object[] { 0.001f, 0.000001f },
-                new object[] { 10000, 100000000 },
-                new object[] { 0, 0 },
-                new object[] { float.MaxValue, float.PositiveInfinity }
-            };
+            return
+            [
+                [5, 25],
+                [0.001f, 0.000001f],
+                [10000, 100000000],
+                [0, 0],
+                [float.MaxValue, float.PositiveInfinity]
+            ];
         }
     }
 
@@ -61,14 +61,14 @@ public class ShapeTest
     {
         get
         {
-            return new[]
-            {
-                new object[] { 1, MathF.PI },
-                new object[] { 5, 25 * MathF.PI },
-                new object[] { 0.5f, 0.25f * MathF.PI },
-                new object[] { 0, 0 },
-                new object[] { float.MaxValue, float.PositiveInfinity }
-            };
+            return
+            [
+                [1, MathF.PI],
+                [5, 25 * MathF.PI],
+                [0.5f, 0.25f * MathF.PI],
+                [0, 0],
+                [float.MaxValue, float.PositiveInfinity]
+            ];
         }
     }
 
@@ -76,14 +76,14 @@ public class ShapeTest
     {
         get
         {
-            return new[]
-            {
-                new object[] { 2, 3, 6 },      // Length = 2, Width = 3, Area = 2 * 3 = 6
-                new object[] { 4, 4, 16 },     // Length = 4, Width = 4, Area = 4 * 4 = 16
-                new object[] { 10, 5, 50 },    // Length = 10, Width = 5, Area = 10 * 5 = 50
-                new object[] { 0, 10, 0 },     // Length = 0, Width = 10, Area = 0 * 10 = 0
-                new object[] { float.MaxValue, float.MaxValue, float.PositiveInfinity }
-            };
+            return
+            [
+                [2, 3, 6],      // Length = 2, Width = 3, Area = 2 * 3 = 6
+                [4, 4, 16],     // Length = 4, Width = 4, Area = 4 * 4 = 16
+                [10, 5, 50],    // Length = 10, Width = 5, Area = 10 * 5 = 50
+                [0, 10, 0],     // Length = 0, Width = 10, Area = 0 * 10 = 0
+                [float.MaxValue, float.MaxValue, float.PositiveInfinity]
+            ];
         }
     }
 }
