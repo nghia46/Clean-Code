@@ -1,12 +1,10 @@
-﻿using CleanCode.Client.DesignPattern.BehavioralPatterns;
-using CleanCode.Client.DesignPattern.StructuralPatterns;
-
-namespace CleanCode;
+﻿namespace CleanCode;
 
 public abstract class Program
 {
-    public static void Main()
+    public static async Task Main()
     {
+        #region Clients
         //new GenericFactoryClient().Main();
         //new FactoryClient().Main();
         //new SingletonClient().Main();
@@ -28,7 +26,10 @@ public abstract class Program
         //new FlyweightClient().Main();
         //new BridgeClient().Main();
         //new StrategyClient().Main();
-        new MediatorClient().Main();
+        //new MediatorClient().Main();
+        new DelegateClient().Main();
+        #endregion
+    
     }
-
+    
 }

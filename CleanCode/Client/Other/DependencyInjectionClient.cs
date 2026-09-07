@@ -1,5 +1,4 @@
 using CleanCode.Techniques.DependencyInjection;
-
 namespace CleanCode.Client.Other;
 
 public class DependencyInjectionClient
